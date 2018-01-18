@@ -6,8 +6,11 @@
     <p>{{ post.text }}</p>
   </div>
 
-  <div class="actions">
-    <a class="button" href="{% url 'post_edit' post.pk %}">+ Edit Blog Post</a>
-    <a class="critical" href="{% url 'post_delete' post.pk %}">+ Delete Blog Post</a>
-  </div>
+  {% if user.is_authenticated %}
+    <div class="actions">
+      <a class="button" href="{% url 'post_edit' post.pk %}">+ Edit Blog Post</a>
+      <a class="critical" href="{% url 'post_delete' post.pk %}">+ Delete Blog Post</a>
+    </div>
+  {% endif %}
+  
 {% endblock content %}
