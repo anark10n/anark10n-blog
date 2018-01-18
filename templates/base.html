@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+<html>
+  <head>
+    <title>Anark10n's Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  </head>
+  <body>
+    <header>
+      <div class="nav-left">
+        <h1><a href="/">Anark10n's Blog</a></h1>
+      </div>
+    </header>
+    <div class="userstate">
+      {% if user.is_authenticated %}
+        <span>Hi {{ user.username }}!</span>
+        <span><a href="{% url 'post_new' %}">+ New Blog Post</a></span>
+        <span><a href="{% url 'logout' %}">Logout</a></span>
+      {% else %}
+        <span><a href="{% url 'login' %}">Login</a></span>
+      {% endif %}
+    </div>
+    <div class="container">
+      {% block content %}
+      {% endblock content %}
+    </div>
+  </body>
+</html>

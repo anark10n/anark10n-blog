@@ -1,0 +1,91 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+header {
+  margin-bottom: 10px;
+  display: flex;
+  background-color: #818181;
+  border-radius: 5px;
+}
+
+header h1 a {
+  color: #2153b8;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+.nav-left {
+  margin-right: auto;
+}
+
+.nav-right {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px;
+}
+
+.userstate {
+  margin-left: 2rem;
+}
+
+.userstate span {
+  background-color: #457cad;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+}
+
+.userstate span a, .userstate span a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.actions {
+  margin-left: 2rem;
+}
+
+.post-entry {
+  margin-bottom: 2rem;
+}
+
+.post-entry h2 {
+  margin-left: 2rem;
+}
+
+.post-entry h2 a, .post-entry h2 a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+.post-entry p {
+  margin: 0;
+  margin-left: 4rem;
+  font-weight: 400;
+}
+
+.post-entry h2 a:hover {
+  color: red;
+}
+
+.button {
+  background-color: #00d591;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.critical {
+  background-color: red;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
